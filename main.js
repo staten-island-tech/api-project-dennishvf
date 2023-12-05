@@ -1,4 +1,4 @@
-const URL = `https://github.com/Hipo/university-domains-list`
+const URL = `http://universities.hipolabs.com/random`
 async function getData(URL){
     try{
         const response= await fetch (URL);
