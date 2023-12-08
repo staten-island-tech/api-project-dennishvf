@@ -1,4 +1,4 @@
-const URL = `http://universities.hipolabs.com/search?name=middle&country=Turkey`
+const URL = `http://universities.hipolabs.com/search?name=`
 async function getData(URL){
     try{
         const response= await fetch (URL);
@@ -10,6 +10,6 @@ async function getData(URL){
         console.log(data);
         document.querySelector("h1").textContent = data.content;
     } catch (error){}
-    document.querySelector("h1").textContent = error;
+    document.querySelectorAll("h1").textContent = error;
 }
 getData(URL);
