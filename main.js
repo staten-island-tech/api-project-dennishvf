@@ -1,4 +1,4 @@
-const URL = `http://universities.hipolabs.com/search?name=`
+const URL = `http://universities.hipolabs.com/search?country=United States`
 async function getData(URL){
     try{
         const response= await fetch (URL);
