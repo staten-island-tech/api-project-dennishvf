@@ -1,3 +1,4 @@
+import { Domselectors } from "./dom";
 const URL = `http://universities.hipolabs.com/search?country=United States`
 async function getData(URL){
     try{
@@ -13,3 +14,8 @@ async function getData(URL){
     document.querySelectorAll("h1").textContent = error;
 }
 getData(URL);
+
+//search bar 
+Domselectors.Form.addEventListener("submit", (event) => {
+    event.preventDefault()
+})
