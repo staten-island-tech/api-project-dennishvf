@@ -14,7 +14,8 @@ async function getData(URL){
     document.querySelectorAll("h1").textContent = error;
 }
 getData(URL);
-
+const CURL=  `http://universities.hipolabs.com/search?country=Canada`
+getData(CURL);
 //search bar 
 Domselectors.Form.addEventListener("submit", (event) => {
     event.preventDefault()
