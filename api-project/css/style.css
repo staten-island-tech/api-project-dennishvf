@@ -33,7 +33,7 @@
        background-color: var(--Primary);
    }
    
-   .flex-container {
+   .Flex-container {
        flex-wrap: wrap;
        display: flex;
        justify-content: space-around;
@@ -53,20 +53,12 @@
            background-color: var(--Secondary);
        }
        
-       .card-img {
-           width: 80%;
-           height: 80%;
-           width: 18vw;
-           height: 280px;
-           object-fit: cover;
-         }
-       
-         .card-title {
+         .Uname {
            font-family: 'Croissant One', cursive;
            font-size: large;
        }
        
-       .card-desc {
+       .Ulink {
            text-align: center;
            font-size: x-large;
        }

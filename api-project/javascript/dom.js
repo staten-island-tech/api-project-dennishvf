@@ -5,6 +5,6 @@ const Domselectors = {
     FlexContainer: document.querySelector(".flex-container"),
     Card: document.querySelectorAll(".card"),
     NameOfUni: document.querySelectorAll(".Uname"),
-    UniLink: document.querySelectorAll(".Ulink")
+    UniLink: document.querySelectorAll(".Ulink"),
 }
 export {Domselectors}
