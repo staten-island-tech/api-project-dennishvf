@@ -14,9 +14,24 @@ async function getData(URL){
     document.querySelectorAll("h1").textContent = error;
 }
 getData(URL);
+
 const CURL=  `http://universities.hipolabs.com/search?country=Canada`
 getData(CURL);
+
 //search bar 
 Domselectors.Form.addEventListener("submit", (event) => {
     event.preventDefault()
 })
+
+//cards when site is opened
+function Insert(arr){
+    arr.forEach((School) => {
+         document.querySelector(".flex-container").insertAdjacentHTML("afterbegin",
+     `<div class="card">
+     <h1 class="Uname">${School.Name}</h1>
+     <h2 class="Ulink">${School.link}</h2>
+     </div>`)
+     });
+     
+ }
+ Insert(menu)
