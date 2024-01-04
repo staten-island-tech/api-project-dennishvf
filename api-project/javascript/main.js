@@ -1,7 +1,12 @@
 import { Domselectors } from "./dom";
 import "../css/style.css";
 
-const URL = `http://universities.hipolabs.com/search?country=United States`
+//search bar 
+Domselectors.Form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    var ser = `${Domselectors.SearchBar.value}`;
+    console.log(ser)
+    const URL = `http://universities.hipolabs.com/search?country=${ser}`
 //American cards when site is opened
 function Insert(arr){
     arr.forEach((School) => {
@@ -24,28 +29,8 @@ function Insert(arr){
         console.log(data);
         Insert(data)
     } catch (error){}
-    document.querySelectorAll("h1").textContent = error;
+    Domselectors.error.textContent = "error";
 }
 getData(URL);
-
-const CURL=  `http://universities.hipolabs.com/search?country=Canada`
-async function getCData(CURL){
-    try{
-        const response= await fetch (CURL);
-        if (response.status !=200){
-            throw new Error(response.statusText);
-        }
-        console.log(response);
-        const data= await response.json();
-        console.log(data);
-        Insert(data)
-    } catch (error){}
-    document.querySelectorAll("h1").textContent = error;
-}
-getData(CURL);
-
-//search bar 
-Domselectors.Form.addEventListener("submit", (event) => {
-    event.preventDefault()
 })
 

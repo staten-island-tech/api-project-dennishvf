@@ -1,4 +1,5 @@
 const Domselectors = {
+    error: document.getElementById("error-message"),
     Form: document.getElementById("form"),
     SearchBar: document.getElementById("Search-Bar"),
     EnterButton: document.querySelector(".button"),
