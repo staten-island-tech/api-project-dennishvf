@@ -28,8 +28,12 @@ function Insert(arr){
         const data= await response.json();
         console.log(data);
         Insert(data)
-    } catch (error){}
-    Domselectors.error.textContent = "error";
+        //if data length 0 then error
+        if(data.length === 0){
+            Domselectors.error.textContent = "Error"
+        }
+    } catch (error){ Domselectors.error.textContent = "Error";}
+   
 }
 getData(URL);
 })
