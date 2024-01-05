@@ -7,7 +7,7 @@ Domselectors.Form.addEventListener("submit", function (event) {
     var ser = `${Domselectors.SearchBar.value}`;
     console.log(ser)
     const URL = `http://universities.hipolabs.com/search?country=${ser}`
-//American cards when site is opened
+
 function Insert(arr){
     arr.forEach((School) => {
          document.querySelector(".Flex-container").insertAdjacentHTML("afterbegin",
