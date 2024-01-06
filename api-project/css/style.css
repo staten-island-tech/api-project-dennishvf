@@ -39,9 +39,13 @@
          .Uname {
            font-family: 'Croissant One', cursive;
            font-size: large;
+           text-align: center;
        }
        
        .Ulink {
            text-align: center;
            font-size: large;
+       }
+       #error-message{
+        text-align: center;
        }

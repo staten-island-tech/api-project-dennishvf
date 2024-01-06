@@ -31,6 +31,7 @@ function Insert(arr){
         //if data length 0 then error
         if(data.length === 0){
             Domselectors.error.textContent = "Error"
+            Domselectors.FlexContainer.innerHTML=""
         }
     } catch (error){ Domselectors.error.textContent = "Error";}
    
