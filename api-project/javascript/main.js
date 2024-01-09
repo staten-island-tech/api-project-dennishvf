@@ -15,23 +15,12 @@ function iInsert(iarr) {
 }
 
 async function igetData(URL) {
-  try {
     const response = await fetch(URL);
-    if (response.status != 200) {
-      throw new Error(response.statusText);
-    }
     console.log(response);
     const data = await response.json();
     console.log(data);
     iInsert(data);
     //if data length 0 then error
-    if (data.length === 0) {
-      Domselectors.error.textContent = "Error";
-      Domselectors.FlexContainer.innerHTML = "";
-    }
-  } catch (error) {
-    Domselectors.error.textContent = "Error";
-  }
 }
 igetData(iurl);
 
@@ -79,5 +68,3 @@ Domselectors.Form.addEventListener("submit", function (event) {
   getData(URL);
 });
 
-//const benter = document.querySelector(".button")
-//benter.addEventListener("click", (event) => {
