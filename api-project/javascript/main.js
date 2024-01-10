@@ -7,8 +7,8 @@ function iInsert(iarr) {
     document.querySelector(".Flex-container").insertAdjacentHTML(
       "afterbegin",
       `<div class="card">
-     <h1 class="Uname">${School.name}</h1>
-     <h2 class="Ulink">${School.web_pages}</h2>
+     <h2 class="Uname">${School.name}</h2>
+     <h3 class="Ulink">${School.web_pages}</h3>
      </div>`
     );
   });
@@ -37,8 +37,8 @@ Domselectors.Form.addEventListener("submit", function (event) {
       document.querySelector(".Flex-container").insertAdjacentHTML(
         "afterbegin",
         `<div class="card">
-     <h1 class="Uname">${School.name}</h1>
-     <h2 class="Ulink">${School.web_pages}</h2>
+     <h2 class="Uname">${School.name}</h2>
+     <h3 class="Ulink">${School.web_pages}</h3>
      </div>`
       );
     });
